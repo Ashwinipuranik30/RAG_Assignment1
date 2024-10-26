@@ -26,6 +26,8 @@ This project demonstrates a chatbot using the **Retrieval-Augmented Generation (
 **Install Streamlit and Required Packages:**
 ```bash
 pip install streamlit transformers sentence-transformers wikipedia requests
+```
+
 
 
 
@@ -33,25 +35,26 @@ pip install streamlit transformers sentence-transformers wikipedia requests
 
 - **Clone the Repository
 **git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
--** Set Up a Virtual Environment
--**Install Dependencies
-**pip install -r requirements.txt
--**Download the LLaMA3 Model
+-** Set Up a Virtual Environment**
+-**Install Dependencies**
+**pip install -r requirements.txt**
+-**Download the LLaMA3 Model**
 ```bash
 ollama pull llama3
--**Start the Ollama Service
--**Run the Streamlit App
-**streamlit run rag_llama.py (RAG mode using llama3 LLM)
-**streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)
-**streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)
-**streamlit run gpt_streamlit.py (Standalone Gpt2 model)
-**streamlit run app1.py (Standalone llama3 model)
+```
+-**Start the Ollama Service**
+-**Run the Streamlit App**
+**streamlit run rag_llama.py (RAG mode using llama3 LLM)**
+**streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)**
+**streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)**
+**streamlit run gpt_streamlit.py (Standalone Gpt2 model)**
+**streamlit run app1.py (Standalone llama3 model)**
 
--**Open the Streamlit App:
-**Visit http://localhost:8501 in your browser.
-**Enter a Query:
-**Type your question in the text input box and click Send.
-**Adjust Parameters:
+-**Open the Streamlit App**
+**Visit http://localhost:8501 in your browser.**
+**Enter a Query:**
+**Type your question in the text input box and click Send.**
+**Adjust Parameters:**
 
 
 ##**Technologies Used**
