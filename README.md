@@ -58,7 +58,7 @@ ollama pull llama3
 
 
 
-##**Technologies Used**
+## **Technologies Used**
 - Python 3.8+
 - Streamlit: Interactive UI for web-based interfaces.
 - Ollama: To run LLaMA3 models locally.
@@ -67,12 +67,12 @@ ollama pull llama3
 - Wikipedia Library: To fetch relevant content for queries.
 
 
-##**Challenges Faced**
--**Handling Multi-Chunk JSON Responses**:
+## **Challenges Faced**
+- **Handling Multi-Chunk JSON Responses**:
 Implemented logic to accumulate and combine partial JSON responses from LLaMA3.
--**Connection Errors with Streamlit**:
+- **Connection Errors with Streamlit**:
 Ensured Ollama service was properly running to avoid connection issues.
--**Disambiguation Handling with Wikipedia**:
+- **Disambiguation Handling with Wikipedia**:
 Added error handling for disambiguation and page-not-found scenarios.
 
 
