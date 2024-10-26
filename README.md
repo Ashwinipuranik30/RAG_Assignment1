@@ -47,17 +47,15 @@ ollama pull llama3
 ```
 - **Start the Ollama Service**
 - **Run the Streamlit App**
-**streamlit run rag_llama.py (RAG mode using llama3 LLM)**
-**streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)**
-**streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)**
-**streamlit run gpt_streamlit.py (Standalone Gpt2 model)**
-**streamlit run app1.py (Standalone llama3 model)**
+- streamlit run rag_llama.py (RAG mode using llama3 LLM)
+- streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)
+- streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)
+- streamlit run gpt_streamlit.py (Standalone Gpt2 model)
+- streamlit run app1.py (Standalone llama3 model)
 
 -**Open the Streamlit App**
-**Visit http://localhost:8501 in your browser.**
-**Enter a Query:**
-**Type your question in the text input box and click Send.**
-**Adjust Parameters:**
+- Visit http://localhost:8501 in your browser.
+
 
 
 ##**Technologies Used**
