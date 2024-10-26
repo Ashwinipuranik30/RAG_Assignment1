@@ -1,7 +1,7 @@
 # RAG_Assignment1
 
 
-LLaMA3 RAG Chatbot with Streamlit Integration
+
 Overview
 This project demonstrates a chatbot using the Retrieval-Augmented Generation (RAG) technique with LLaMA3. It allows users to ask questions, retrieve relevant information from Wikipedia, and generate context-aware responses. The chatbot runs entirely on a local machine, leveraging LLaMA3 via Ollama and GPT-2 model, with an easy-to-use Streamlit UI.
 
