@@ -30,20 +30,21 @@ pip install streamlit transformers sentence-transformers wikipedia requests
 
 
 
+---
 
 ## **Set Up Instructions**
 
 - **Clone the Repository
-**git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
--** Set Up a Virtual Environment**
--**Install Dependencies**
-**pip install -r requirements.txt**
--**Download the LLaMA3 Model**
+- **git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
+- ** Set Up a Virtual Environment**
+- **Install Dependencies**
+- **pip install -r requirements.txt**
+- **Download the LLaMA3 Model**
 ```bash
 ollama pull llama3
 ```
--**Start the Ollama Service**
--**Run the Streamlit App**
+- **Start the Ollama Service**
+- **Run the Streamlit App**
 **streamlit run rag_llama.py (RAG mode using llama3 LLM)**
 **streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)**
 **streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)**
@@ -58,12 +59,12 @@ ollama pull llama3
 
 
 ##**Technologies Used**
--Python 3.8+
--Streamlit: Interactive UI for web-based interfaces.
--Ollama: To run LLaMA3 models locally.
--Transformers Library: For GPT-2 text generation.
--Sentence Transformers: For embedding Wikipedia content.
--Wikipedia Library: To fetch relevant content for queries.
+- Python 3.8+
+- Streamlit: Interactive UI for web-based interfaces.
+- Ollama: To run LLaMA3 models locally.
+- Transformers Library: For GPT-2 text generation.
+- Sentence Transformers: For embedding Wikipedia content.
+- Wikipedia Library: To fetch relevant content for queries.
 
 
 ##**Challenges Faced**
