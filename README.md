@@ -34,8 +34,7 @@ pip install streamlit transformers sentence-transformers wikipedia requests
 
 ## **Set Up Instructions**
 
-- **Clone the Repository**
-- git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
+- **Clone the Repository** : git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
 - **Set Up a Virtual Environment**
 - **Install Dependencies**
 ```bash
@@ -47,13 +46,14 @@ ollama pull llama3
 ```
 - **Start the Ollama Service**
 - **Run the Streamlit App**
-- streamlit run rag_llama.py (RAG mode using llama3 LLM)
+  ---
+-  streamlit run rag_llama.py (RAG mode using llama3 LLM)
 - streamlit run rag_gpt2.py (RAG mode using GPT2 LLM)
 - streamlit run rag_gpt_llama.py (RAG mode using llama3 & GPT2 LLMs)
 - streamlit run gpt_streamlit.py (Standalone Gpt2 model)
 - streamlit run app1.py (Standalone llama3 model)
 
--**Open the Streamlit App**
+- **Open the Streamlit App**
 - Visit http://localhost:8501 in your browser.
 
 
