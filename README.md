@@ -34,11 +34,13 @@ pip install streamlit transformers sentence-transformers wikipedia requests
 
 ## **Set Up Instructions**
 
-- **Clone the Repository
-- **git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
-- ** Set Up a Virtual Environment**
+- **Clone the Repository**
+- git clone https://github.com/Ashwinipuranik30/RAG_Assignment1.git
+- **Set Up a Virtual Environment**
 - **Install Dependencies**
-- **pip install -r requirements.txt**
+```bash
+  pip install -r requirements.txt
+```
 - **Download the LLaMA3 Model**
 ```bash
 ollama pull llama3
