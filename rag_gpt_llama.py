@@ -6,6 +6,10 @@ from sentence_transformers import SentenceTransformer
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import wikipedia  # Use the correct Wikipedia library
 
+# Create a session to keep the connection alive
+session = requests.Session()
+session.headers.update({'Connection': 'keep-alive'})
+
 # Load SentenceTransformer for embeddings
 embedder = SentenceTransformer("Alibaba-NLP/gte-base-en-v1.5", trust_remote_code=True)
 
@@ -27,7 +31,6 @@ LLAMA_API_URL = "http://localhost:11434/api/chat"
 def get_relevant_wiki_content(query):
     try:
         search_results = wikipedia.search(query, results=1)
-
         if not search_results:
             return "No relevant Wikipedia content found."
 
@@ -63,8 +66,8 @@ def call_gpt2(prompt, max_tokens=100):
     )
     return gpt2_tokenizer.decode(output[0], skip_special_tokens=True).strip()
 
-# Call the LLaMA API
-def call_llama(prompt, temperature=0.7, max_tokens=300):
+# Call the LLaMA API using the session for Keep-Alive
+def call_llama(prompt, temperature=0.7, max_tokens=100):
     payload = {
         "model": "llama3.2",
         "temperature": temperature,
@@ -72,7 +75,7 @@ def call_llama(prompt, temperature=0.7, max_tokens=300):
         "messages": [{"role": "user", "content": prompt}]
     }
     try:
-        response = requests.post(LLAMA_API_URL, json=payload, stream=True, timeout=30)
+        response = session.post(LLAMA_API_URL, json=payload, stream=True, timeout=120)
         response.raise_for_status()
 
         chunks = []
